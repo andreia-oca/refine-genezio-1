@@ -1,0 +1,126 @@
+{
+    "blogPosts": [
+        {
+            "id": 1,
+            "title": "My 1st blog post",
+            "content": "Hello World!",
+            "category_ids": [1, 2],
+            "author_id": 1,
+            "status": "published",
+            "created_at": "2023-10-10T10:00:00Z"
+        },
+        { 
+            "id": 2,
+            "title": "About lifestyle",
+            "content": "Lessons from Mary, to the world",
+            "category_ids": [2, 3],
+            "author_id": 2,
+            "status": "published",
+            "created_at": "2024-05-10T10:00:00Z"
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "title": "General"
+        },
+        {
+            "id": 2,
+            "title": "Technology"
+        },
+        {
+            "id": 3,
+            "title": "Lifestyle"
+        },
+        {
+            "id": 4,
+            "title": "Travel"
+        },
+        {
+            "id": 5,
+            "title": "Food"
+        },
+        {
+            "id": 6,
+            "title": "Fashion"
+        },
+        {
+            "id": 7,
+            "title": "Music"
+        },
+        {
+            "id": 8,
+            "title": "Sports"
+        },
+        {
+            "id": 9,
+            "title": "Business"
+        },
+        {
+            "id": 10,
+            "title": "Politics"
+        },
+        {
+            "id": 11,
+            "title": "Entertainment"
+        },
+        {
+            "id": 12,
+            "title": "Education"
+        },
+        {
+            "id": 13,
+            "title": "Education1"
+        },
+        {
+            "id": 14,
+            "title": "Education2"
+        },
+        {
+            "id": 15,
+            "title": "Education3"
+        },
+        {
+            "id": 16,
+            "title": "Education4"
+        },
+        {
+            "id": 17,
+            "title": "Education5"
+        },
+        {
+            "id": 18,
+            "title": "Education6"
+        },
+        {
+            "id": 19,
+            "title": "Education7"
+        },
+        {
+            "id": 20,
+            "title": "Education8"
+        },
+        {
+            "id": 21,
+            "title": "Education9"
+        },
+        {
+            "id": 22,
+            "title": "Education10"
+        },
+        {
+            "id": 23,
+            "title": "Education11"
+        }
+    ],
+    "authors": [
+        {
+            "id": 1,
+            "name": "John Doe"
+        },
+        {
+            "id": 2,
+            "name": "Mary Jane"
+        }
+    ]
+}

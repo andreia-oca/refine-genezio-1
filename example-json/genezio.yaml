@@ -1,0 +1,41 @@
+name: refine-json
+region: eu-central-1
+yamlVersion: 2
+services:
+    databases:
+        - name: demo
+          region: eu-central-1
+          type: postgres-neon
+    authentication:
+        database:
+            name: demo
+        providers:
+            email: true
+        settings:
+            resetPassword:
+                redirectUrl: https://${{frontend.refine-frontend.subdomain}}.app.genez.io/reset-password
+backend:
+    path: server
+    language:
+        name: ts
+        packageManager: npm
+    scripts:
+        deploy: npm install
+        local: npm install
+frontend:
+    name: refine-frontend
+    path: client
+    publish: dist
+    environment:
+        VITE_AUTHENTICATION_REGION: ${{services.authentication.region}}
+        VITE_AUTHENTICATION_TOKEN: ${{services.authentication.token}}
+    scripts:
+        build: npm run build
+        deploy:
+            - npm install @genezio-sdk/${{projectName}}@1.0.0-${{stage}}
+            - npm install
+        start:
+            - npm install --silent
+            - npm run dev --silent
+    sdk:
+        language: ts

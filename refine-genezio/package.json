@@ -1,0 +1,21 @@
+{
+  "name": "refine-genezio",
+  "version": "1.0.2",
+  "description": "A dynamic DataProvider for refine and genezio SDKs.",
+  "main": "dist/refine-genezio.js",
+  "types": "dist/refine-genezio.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "refine",
+    "genezio",
+    "DataProvider"
+  ],
+  "author": "Bogdan Ripa",
+  "license": "MIT",
+  "devDependencies": {
+    "@refinedev/core": "^4.0.0",
+    "typescript": "^4.0.0"
+  }
+}
