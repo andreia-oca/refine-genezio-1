@@ -1,0 +1,12 @@
+frontend:
+    path: example-json/client
+    publish: dist
+    scripts:
+        build:
+            - npm run build
+        deploy:
+            - npm install
+    subdomain: amber-fragile-grasshopper
+name: amber-fragile-grasshopper
+region: us-east-1
+yamlVersion: 2
